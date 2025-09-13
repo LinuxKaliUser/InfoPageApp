@@ -5,6 +5,9 @@ import 'package:info_page_app/saeule_3a_page.dart';
 import 'package:info_page_app/ueber_uns_page.dart';
 import 'package:info_page_app/vermoegen_page.dart';
 
+import 'package:info_page_app/gebuehren_page.dart';
+import 'package:info_page_app/gebuehren_rechner_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -28,6 +31,8 @@ class MyApp extends StatelessWidget {
         '/vermoegen': (context) => const VermoegenPage(),
         '/anlage': (context) => const AnlagePage(),
         '/ueberuns': (context) => const UeberUnsPage(),
+        '/gebuehren': (context) => const GebuehrenPage(),
+        '/gebuehrenrechner': (context) => const GebuehrenRechnerPage(),
       },
       debugShowCheckedModeBanner: false,
     );
@@ -40,16 +45,16 @@ class AppNavigation extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text("Unsere Firma"),
+      title: const Text("AV Advisor Nagarajah"),
       actions: [
         // Parent Tab: Unsere Services
         PopupMenuButton<String>(
-          tooltip: "Unsere Services",
+          tooltip: "Services",
           child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Center(
               child: Text(
-                "Unsere Services",
+                "Services",
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
             ),
@@ -58,25 +63,21 @@ class AppNavigation extends StatelessWidget implements PreferredSizeWidget {
             Navigator.pushNamed(context, value);
           },
           itemBuilder: (context) => [
-            const PopupMenuItem(value: '/saeule3a', child: Text("Säule 3a")),
-            const PopupMenuItem(
-              value: '/vermoegen',
-              child: Text("Vermögensverwaltung"),
-            ),
-            const PopupMenuItem(
-              value: '/anlage',
-              child: Text("Anlageberatung"),
-            ),
+            const PopupMenuItem(value: '/saeule3a', child: Text("SÃ¤uele 3a")),
+            const PopupMenuItem(value: '/vermoegen', child: Text("VermÃ¶gensverwaltung")),
+            const PopupMenuItem(value: '/anlage', child: Text("Anlageberatung")),
+            const PopupMenuItem(value: '/gebuehren', child: Text("GebÃ¼hren")),
+            const PopupMenuItem(value: '/gebuehrenrechner', child: Text("GebÃ¼hrenrechner")),
           ],
         ),
 
-        // Parent Tab: Über uns
+        // Parent Tab: ï¿½ber uns
         TextButton(
           onPressed: () {
             Navigator.pushNamed(context, '/ueberuns');
           },
           child: const Text(
-            "Über uns",
+            "Ãœber uns",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
         ),

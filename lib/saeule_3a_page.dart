@@ -10,9 +10,9 @@ class Saeule3aPage extends StatelessWidget {
       appBar: const AppNavigation(),
       body: const Center(
         child: Text(
-          "Informationen über Säule 3a: "
-          "Die private Vorsorge in der Schweiz ermöglicht es, "
-          "steuerlich begünstigt Kapital für die Altersvorsorge aufzubauen.",
+          "Informationen ueber Saeule 3a: "
+          "Die private Vorsorge in der Schweiz ermoeglicht es, "
+          "steuerlich befreites Kapital vor dem Rentenalter fuer die Altersvorsorge aufzubauen.",
           style: TextStyle(fontSize: 18),
           textAlign: TextAlign.center,
         ),

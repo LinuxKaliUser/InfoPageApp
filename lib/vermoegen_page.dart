@@ -10,9 +10,9 @@ class VermoegenPage extends StatelessWidget {
       appBar: const AppNavigation(),
       body: const Center(
         child: Text(
-          "Vermögensverwaltung: "
-          "Wir bieten Ihnen eine professionelle Verwaltung Ihres Vermögens, "
-          "individuell abgestimmt auf Ihre Anlageziele und Risikoprofile.",
+          "Vermoegensverwaltung: "
+          "Wir bieten Ihnen eine professionelle Verwaltung Ihres Vermoegens, "
+          "individuell abgestimmt auf Ihre Anlageziele und Risikoprofil.",
           style: TextStyle(fontSize: 18),
           textAlign: TextAlign.center,
         ),

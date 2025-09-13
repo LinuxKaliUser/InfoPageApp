@@ -10,7 +10,7 @@ class InfoPage extends StatelessWidget {
       appBar: const AppNavigation(),
       body: const Center(
         child: Text(
-          "Willkommen auf unserer Info-Seite!",
+          "Willkommen auf unsere Website!",
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
